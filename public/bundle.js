@@ -4602,13 +4602,13 @@ var app = (function () {
     			h11.textContent = "loading data from server";
     			t3 = space();
     			img = element("img");
-    			add_location(h10, file$2, 1, 2, 24);
-    			add_location(h11, file$2, 2, 2, 53);
+    			add_location(h10, file$2, 7, 2, 104);
+    			add_location(h11, file$2, 8, 2, 133);
     			attr_dev(img, "src", "/assets/images/loading.gif");
     			attr_dev(img, "alt", "loading gif");
-    			add_location(img, file$2, 3, 2, 89);
-    			attr_dev(div, "class", "loading");
-    			add_location(div, file$2, 0, 0, 0);
+    			add_location(img, file$2, 9, 2, 169);
+    			attr_dev(div, "class", "loading indicator svelte-14hptcb");
+    			add_location(div, file$2, 6, 0, 70);
     		},
 
     		l: function claim(nodes) {
@@ -5429,13 +5429,15 @@ var app = (function () {
     			t3 = space();
 
     			if (default_slot) default_slot.c();
-    			add_location(h1, file$6, 2, 4, 46);
-    			add_location(p, file$6, 3, 4, 77);
+    			attr_dev(h1, "class", "svelte-6mi56b");
+    			add_location(h1, file$6, 10, 4, 141);
+    			attr_dev(p, "class", "svelte-6mi56b");
+    			add_location(p, file$6, 11, 4, 172);
 
     			attr_dev(div0, "class", "banner");
-    			add_location(div0, file$6, 1, 2, 21);
+    			add_location(div0, file$6, 9, 2, 116);
     			attr_dev(div1, "class", "hero");
-    			add_location(div1, file$6, 0, 0, 0);
+    			add_location(div1, file$6, 8, 0, 95);
     		},
 
     		l: function claim(nodes) {
@@ -5948,21 +5950,39 @@ var app = (function () {
     const file$9 = "src/pages/About.svelte";
 
     function create_fragment$c(ctx) {
-    	var section, h1, t_1, p;
+    	var section, h1, t1, img, t2, p0, t4, p1, t6, p2, t8, p3;
 
     	const block = {
     		c: function create() {
     			section = element("section");
     			h1 = element("h1");
     			h1.textContent = "about us";
-    			t_1 = space();
-    			p = element("p");
-    			p.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae\n    repudiandae architecto qui adipisci in officiis, aperiam sequi atque\n    perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur\n    nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione hic\n    aspernatur error blanditiis?";
-    			attr_dev(h1, "class", "section-title");
-    			add_location(h1, file$9, 1, 2, 42);
-    			add_location(p, file$9, 2, 2, 84);
+    			t1 = space();
+    			img = element("img");
+    			t2 = space();
+    			p0 = element("p");
+    			p0.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae\n    repudiandae architecto qui adipisci in officiis, aperiam sequi atque\n    perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur\n    nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione hic\n    aspernatur error blanditiis?";
+    			t4 = space();
+    			p1 = element("p");
+    			p1.textContent = "Sit aliqua sit consequat irure. Et sit incididunt excepteur anim quis\n    pariatur nisi minim exercitation. Adipisicing velit incididunt non cupidatat\n    sint proident. Qui veniam ex enim eiusmod sint eiusmod nulla tempor ullamco\n    adipisicing consequat aute ea. Pariatur duis minim mollit quis et cupidatat\n    irure excepteur velit.";
+    			t6 = space();
+    			p2 = element("p");
+    			p2.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae\n    repudiandae architecto qui adipisci in officiis, aperiam sequi atque\n    perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur\n    nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione hic\n    aspernatur error blanditiis?";
+    			t8 = space();
+    			p3 = element("p");
+    			p3.textContent = "Mr John Smith. 132, My Street, Kingston, New York 12401.";
+    			attr_dev(h1, "class", "section-title svelte-w9so1n");
+    			add_location(h1, file$9, 14, 2, 227);
+    			attr_dev(img, "src", "assets/images/about.jpg");
+    			attr_dev(img, "alt", "Razor-Image");
+    			attr_dev(img, "class", "svelte-w9so1n");
+    			add_location(img, file$9, 15, 2, 269);
+    			add_location(p0, file$9, 16, 2, 327);
+    			add_location(p1, file$9, 23, 2, 671);
+    			add_location(p2, file$9, 30, 2, 1026);
+    			add_location(p3, file$9, 37, 2, 1370);
     			attr_dev(section, "class", "section about-section");
-    			add_location(section, file$9, 0, 0, 0);
+    			add_location(section, file$9, 13, 0, 185);
     		},
 
     		l: function claim(nodes) {
@@ -5972,8 +5992,16 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
     			append_dev(section, h1);
-    			append_dev(section, t_1);
-    			append_dev(section, p);
+    			append_dev(section, t1);
+    			append_dev(section, img);
+    			append_dev(section, t2);
+    			append_dev(section, p0);
+    			append_dev(section, t4);
+    			append_dev(section, p1);
+    			append_dev(section, t6);
+    			append_dev(section, p2);
+    			append_dev(section, t8);
+    			append_dev(section, p3);
     		},
 
     		p: noop,
@@ -6120,7 +6148,7 @@ var app = (function () {
     			add_location(i, file$b, 15, 6, 412);
     			attr_dev(button, "class", "btn-sidebar-toggle");
     			add_location(button, file$b, 10, 4, 293);
-    			attr_dev(img, "src", "/assets/images/logo.svg");
+    			attr_dev(img, "src", "/assets/images/logo.png");
     			attr_dev(img, "class", "logo");
     			attr_dev(img, "alt", "razors logo");
     			add_location(img, file$b, 19, 6, 519);
@@ -6376,25 +6404,23 @@ var app = (function () {
 
     // (13:8) {#each links as navLink}
     function create_each_block$2(ctx) {
-    	var li, a, t0_value = ctx.navLink.text + "", t0, link_action, t1;
+    	var li, a, t_value = ctx.navLink.text + "", t, link_action;
 
     	const block = {
     		c: function create() {
     			li = element("li");
     			a = element("a");
-    			t0 = text(t0_value);
-    			t1 = space();
+    			t = text(t_value);
     			attr_dev(a, "href", ctx.navLink.url);
-    			add_location(a, file$d, 14, 12, 401);
+    			add_location(a, file$d, 13, 14, 388);
     			add_location(li, file$d, 13, 10, 384);
     		},
 
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
     			append_dev(li, a);
-    			append_dev(a, t0);
+    			append_dev(a, t);
     			link_action = link.call(null, a) || {};
-    			append_dev(li, t1);
     		},
 
     		p: noop,
@@ -6447,15 +6473,15 @@ var app = (function () {
     			cartbutton.$$.fragment.c();
     			attr_dev(ul, "class", "nav-links");
     			add_location(ul, file$d, 11, 6, 318);
-    			attr_dev(img, "src", "/assets/images/logo.svg");
+    			attr_dev(img, "src", "/assets/images/logo.png");
     			attr_dev(img, "class", "logo");
     			attr_dev(img, "alt", "razors logo");
-    			add_location(img, file$d, 20, 8, 581);
+    			add_location(img, file$d, 18, 8, 557);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "class", "nav-logo big-logo");
-    			add_location(a, file$d, 19, 6, 525);
+    			add_location(a, file$d, 17, 6, 501);
     			attr_dev(div0, "class", "nav-aside");
-    			add_location(div0, file$d, 23, 6, 694);
+    			add_location(div0, file$d, 21, 6, 670);
     			attr_dev(div1, "class", "nav-center");
     			add_location(div1, file$d, 9, 4, 262);
     			attr_dev(div2, "class", "nav-container");
@@ -6873,7 +6899,7 @@ var app = (function () {
     			add_location(button, file$e, 12, 6, 434);
     			attr_dev(div0, "class", "sidebar-header");
     			add_location(div0, file$e, 11, 4, 399);
-    			attr_dev(img, "src", "/assets/images/logo.svg");
+    			attr_dev(img, "src", "/assets/images/logo.png");
     			attr_dev(img, "class", "logo sidebar-logo");
     			attr_dev(img, "alt", "razors logo");
     			add_location(img, file$e, 21, 4, 654);

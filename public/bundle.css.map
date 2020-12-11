@@ -1,8 +1,16 @@
 {
   "version": 3,
   "file": "bundle.css",
-  "sources": [],
-  "sourcesContent": [],
+  "sources": [
+    "../src/pages/About.svelte",
+    "../src/components/Loading.svelte",
+    "../src/components/Hero.svelte"
+  ],
+  "sourcesContent": [
+    "<style>\n  img {\n    width: 50%;\n    margin: 1rem auto 1.5rem auto;\n    border-radius: 10px;\n    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.5);\n  }\n\n  h1 {\n    margin: 0;\n  }\n</style>\n\n<section class=\"section about-section\">\n  <h1 class=\"section-title\">about us</h1>\n  <img src=\"assets/images/about.jpg\" alt=\"Razor-Image\" />\n  <p>\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae\n    repudiandae architecto qui adipisci in officiis, aperiam sequi atque\n    perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur\n    nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione hic\n    aspernatur error blanditiis?\n  </p>\n  <p>\n    Sit aliqua sit consequat irure. Et sit incididunt excepteur anim quis\n    pariatur nisi minim exercitation. Adipisicing velit incididunt non cupidatat\n    sint proident. Qui veniam ex enim eiusmod sint eiusmod nulla tempor ullamco\n    adipisicing consequat aute ea. Pariatur duis minim mollit quis et cupidatat\n    irure excepteur velit.\n  </p>\n  <p>\n    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae\n    repudiandae architecto qui adipisci in officiis, aperiam sequi atque\n    perferendis eos, autem maiores nisi saepe quisquam hic odio consectetur\n    nobis veritatis quasi explicabo obcaecati doloremque? Placeat ratione hic\n    aspernatur error blanditiis?\n  </p>\n  <p>Mr John Smith. 132, My Street, Kingston, New York 12401.</p>\n</section>\n",
+    "<style>\n  .indicator {\n    margin: 2rem auto 2rem auto;\n  }\n</style>\n\n<div class=\"loading indicator\">\n  <h1>please be patient</h1>\n  <h1>loading data from server</h1>\n  <img src=\"/assets/images/loading.gif\" alt=\"loading gif\" />\n</div>\n",
+    "<style>\n  h1,\n  p {\n    text-shadow: 1px 1px 3px rgb(0, 0, 0);\n    color: white;\n  }\n</style>\n\n<div class=\"hero\">\n  <div class=\"banner\">\n    <h1>foam, shave, grow</h1>\n    <p>Embrace your choices - we do</p>\n    <slot>\n      <!-- optional fallback -->\n    </slot>\n  </div>\n</div>\n"
+  ],
   "names": [],
-  "mappings": ""
+  "mappings": "AACE,GAAG,cAAC,CAAC,AACH,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,MAAM,CAAC,IAAI,CAC7B,aAAa,CAAE,IAAI,CACnB,UAAU,CAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,KAAK,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,GAAG,CAAC,AAChD,CAAC,AAED,EAAE,cAAC,CAAC,AACF,MAAM,CAAE,CAAC,AACX,CAAC;ACTD,UAAU,eAAC,CAAC,AACV,MAAM,CAAE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI,AAC7B,CAAC;ACFD,gBAAE,CACF,CAAC,cAAC,CAAC,AACD,WAAW,CAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CACrC,KAAK,CAAE,KAAK,AACd,CAAC"
 }

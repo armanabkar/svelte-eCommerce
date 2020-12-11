@@ -20,7 +20,7 @@
     </div>
     <!-- site logo -->
     <img
-      src="/assets/images/logo.svg"
+      src="/assets/images/logo.png"
       class="logo sidebar-logo"
       alt="razors logo" />
     <!-- links -->

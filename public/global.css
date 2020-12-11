@@ -10,22 +10,22 @@ Variables
 ======
 */
 :root {
-  --primaryColor: #9e3aa3;
-  --primaryDarkColor: #4e1d51;
+  --primaryColor: #62929e;
+  --primaryDarkColor: #334049;
   --primaryFont: "Catamaran", sans-serif;
   --slantedFont: "Kaushan Script", cursive;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
-  --mainBackground: rgb(250, 245, 243);
-  --mainOverlay: rgba(35, 10, 36, 0.4);
-  --mainBlack: #222;
-  --mainGrey: #ececec;
+  --mainBackground: rgb(241, 241, 241);
+  --mainOverlay: #3340495d;
+  --mainBlack: #393d3f;
+  --mainGrey: #fdfdff;
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 0.3rem;
-  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --lightShadow: 2px 3px 4px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 6px 8px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
   --smallWidth: 85vw;
   --maxWidth: 1170px;
@@ -228,8 +228,8 @@ Hero
 .hero {
   min-height: calc(100vh - 5rem);
   background: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
+      rgba(0, 0, 0, 0.3),
+      rgba(83, 83, 83, 0.3)
     ),
     url("./assets/images/mainBcg.jpeg") center/cover no-repeat;
   display: flex;
@@ -285,7 +285,7 @@ Products
 ======
 */
 .section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .section-title {
   font-size: 2.3rem;
@@ -317,6 +317,7 @@ Products
   transition: var(--mainTransition);
   display: grid;
   grid-template-rows: auto 1fr;
+  border-radius: 10px;
 }
 .product:hover {
   box-shadow: var(--darkShadow);
@@ -589,7 +590,7 @@ Expense Form
 .form {
   width: var(--smallWidth);
   margin: 0 auto;
-  margin-top: 10rem;
+  padding-top: 2rem;
   max-width: 35rem;
 }
 .login-form,
